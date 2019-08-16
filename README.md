@@ -11,7 +11,7 @@
 
 For this assignment, you will build hangman.  This time, you'll build it as a web app!
 
-![sampleGif]()
+![sampleGif](https://github.com/joinpursuit/Pursuit-Core-Web-Hangman-Weekly-Assignment/blob/master/HangmanWebApp.gif)
 
 ## Requirements
 
