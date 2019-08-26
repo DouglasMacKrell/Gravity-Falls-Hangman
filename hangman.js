@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // let resetButton = document.querySelector("")
 
 
-    let arr = ["daddy", "bubble", "button"]
+    let arr = ["daddy", "bubble", "button", "stan", "grunkle", "dipper", "mabel", "soos", "mcgucket", "mcskermish", "greasys", "susan", "candy", "greta", "standord", "stanley", "dimensional", "caesar", "cipher", "blendin", "blandin", "journal", "cider", "summerween", "jackalope", "bigfoot", "alien", "gobblewonker", "mystery", "shack", "gravity", "triangle", "pacifica", "waddles"]
 
     let threeLettersBack = "DEFGHIJKLMNOPQRSTUVWXYZABC"
 
