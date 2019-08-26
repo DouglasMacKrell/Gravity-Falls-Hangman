@@ -73,8 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     document.getElementById("encoded-word").innerHTML = caesarHolder
-
-    document.getElementById("dash-holder").innerHTML = dashHolder.join("")
+    document.getElementById("dash-holder").innerHTML = dashHolder.join("");
 
     console.log(dashHolder)
     console.log(caesarHolder)
@@ -93,8 +92,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (userInput === "") {
             event.preventDefault()
             window.alert("NO TEXT HAS BEEN ENTERED!")
-            // let alert = document.querySelector("#error")
-            // alert.innerText = "No text has been entered!"
         } else {
             event.preventDefault()
             alert.innerText = ""
@@ -103,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (userInput === splitRandomWord[i]) {
                     dashHolder[i] = `${userInput}`;
                     console.log(dashHolder)
-                    document.getElementById("dash-holder").innerHTML = dashHolder.join("")
+                    document.getElementById("dash-holder").innerHTML = (dashHolder.join("")).toUpperCase()
                 }
             }
             if(temp == dashHolder.join("")) {
@@ -126,49 +123,20 @@ document.addEventListener("DOMContentLoaded", () => {
             } else if (wrongAnswers === 6) {
                 document.getElementById("energy6").style.visibility = "visible"
             }
+         if (!dashHolder.includes("_ ")){
+            console.log("You win!!!")
+            document.getElementById("page5").style.display = "none"
+            document.getElementById("you-win").style.display = "flex"
+         } else if (wrongAnswers === 7) {
+            console.log("You lose!")
+            document.getElementById("page5").style.display = "none"
+            document.getElementById("you-lose").style.display = "flex"
+         }
         }
         document.getElementById("user-input").value = ""
-        // while(!win && wrongAnswers < 6) {
-        // let dashesCounter = 0
-        // for (let i = 0; i < dashHolder.length; i++){
-        //     if (dashHolder[i] === '_ '){
-        //     dashesCounter++
-        //     }
-        // }
-        // if (wrongAnswers === 6) {
-        //     console.log("You lose!")
-        //     document.getElementById("page5").style.display = "none"
-        //     document.getElementById("you-lose").style.display = "flex"
-        // }
-        // if (dashesCounter > 0) {
-        //     win = false
-        // } else {
-        //     win = true;
-        //     console.log("You win!!!")
-        //     document.getElementById("page5").style.display = "none"
-        //     document.getElementById("you-win").style.display = "flex"
-        // }
-        // }
+
     })
     
-    // let userInput;
-    
-    // function getCharacter() {
-    //     let temp = dashHolder.join('');
-    //     // userInput = readlineSync.question(`Guess character: \n`)
-    //     for (let i = 0; i < splitRandomWord.length; i++) {
-    //         if (userInput === splitRandomWord[i]) {
-    //             dashHolder[i] = `${userInput} `;
-    //         }
-    //     }
-        
-    //     console.log(dashHolder.join(""))
-    //     console.log(dashHolder)
-        
-    //     if (temp == dashHolder.join('')) {
-    //         wrongAnswers++
-    //     }
-    // }
     
 
 
