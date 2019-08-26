@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hangman Test1</title>
+        <script src="./hangman.js" type="text/javascript"></script>
+        <link href="./hangman.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="music">
+            <audio controls autoplay="true" loop="true"> 
+                <source src="./gf chiptune.mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div id="page1">
+            <h1 class="bill-greeting">
+                HEY THERE.<br>
+                LONG TIME NO SEE.
+            </h1>
+            <img class="bill bill-greet" src="https://media2.giphy.com/media/5bxBsk0qT5cjK/source.gif" alt="Bill Cipher Cycle">
+            <h1 class="bill-greeting">
+                WANT TO PLAY A GAME?
+            </h1>
+            <div id="do_you_want_to_play">
+                <form id="yes-no">
+                    <input id="yes" type="radio" value="yes"> YES 
+                    <input id="no" type="radio" value="no"> NO 
+                </form>
+            </div>
+        </div>
+        <div id="page2">
+            <h1 class="header">WELCOME TO<br>Bill Cipher's Kdqjpdq</h1>
+            <div class="bill-collector">
+                <div class="container">
+                            <img class="energy" id="energy1" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                            <img class="energy" id="energy2" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                            <img class="energy" id="energy3" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                </div>
+                <img class="bill" src="https://media2.giphy.com/media/5bxBsk0qT5cjK/source.gif" alt="Bill Cipher Cycle">
+                <div class="container">
+                        <img class="energy" id="energy4" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                        <img class="energy" id="energy5" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                        <img class="energy" id="energy6" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                </div>
+            </div>
+            <div>
+                <p class="dialog bill-talk">BILL: The game is simple. I've encoded a word, and you need to decode it.<br>
+                    However, for every wrong guess you make, I get a little more powerful.<br>
+                    Make six wrong guesses, and I'll be poweful enough to enter your dimension and have some REAL fun.<br>
+                </p>
+                <p id="empty-word-display"></p>
+            </div>
+            <div class="character_pane">
+                <form id="form1">
+                    <img class="character" src="https://www.stickpng.com/assets/images/5b45cb3dc051e602a568cd0f.png" alt="Dipper Best">
+                    <button id="press-to-talk1">NEXT</button>
+                </form>
+            </div>
+        </div>
+        <div id="page3">
+                <h1 class="header">WELCOME TO<br>Bill Cipher's Kdqjpdq</h1>
+                <div class="bill-collector">
+                    <div class="container">
+                                <img class="energy" id="energy1" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                                <img class="energy" id="energy2" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                                <img class="energy" id="energy3" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                    </div>
+                    <img class="bill" src="https://media2.giphy.com/media/5bxBsk0qT5cjK/source.gif" alt="Bill Cipher Cycle">
+                    <div class="container">
+                            <img class="energy" id="energy4" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                            <img class="energy" id="energy5" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                            <img class="energy" id="energy6" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                        </div>
+                    </div>
+                    <div>
+                        <p class="dialog dipper-talk">DIPPER: And what do I get if I win?<br>
+                        </p>
+                    <p id="empty-word-display"></p>
+                </div>
+                <div class="character_pane">
+                    <form id="form2">
+                        <img class="character" src="https://www.stickpng.com/assets/images/5b45cb37c051e602a568cd0e.png" alt="Dipper Upset">
+                        <button id="press-to-talk2">NEXT</button>
+                    </form>
+                </div>
+            </div>
+            <div id="page4">
+                    <h1 class="header">WELCOME TO<br>Bill Cipher's Kdqjpdq</h1>
+                    <div class="bill-collector">
+                        <div class="container">
+                                    <img class="energy" id="energy1" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                                    <img class="energy" id="energy2" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                                    <img class="energy" id="energy3" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                        </div>
+                        <img class="bill" src="https://media2.giphy.com/media/5bxBsk0qT5cjK/source.gif" alt="Bill Cipher Cycle">
+                        <div class="container">
+                                <img class="energy" id="energy4" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                                <img class="energy" id="energy5" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                                <img class="energy" id="energy6" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="dialog bill-talk">BILL: You get to live out the handful of remaining years your pathetic mortal body can survive!<br>
+                                Ready or not, HERE WE GO!<br>
+                            </p>
+                        <p id="empty-word-display"></p>
+                    </div>
+                    <div class="character_pane">
+                        <form id="form3">
+                            <img class="character" src="https://www.trzcacak.rs/myfile/detail/222-2223451_dipper-pines-png-gravity-falls-png-hd.png" alt="Dipper Worried">
+                            <button id="press-to-talk3">START</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="page5">
+                        <h1 class="header">WELCOME TO<br>Bill Cipher's Kdqjpdq</h1>
+                        <div class="bill-collector">
+                            <div class="container">
+                                    <img class="energy" id="energy1" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                                    <img class="energy" id="energy2" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                                    <img class="energy" id="energy3" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                            </div>
+                            <img class="bill" src="https://media2.giphy.com/media/5bxBsk0qT5cjK/source.gif" alt="Bill Cipher Cycle">
+                            <div class="container">
+                                    <img class="energy" id="energy4" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                                    <img class="energy" id="energy5" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                                    <img class="energy" id="energy6" src="https://media2.giphy.com/media/3oEhmP1i8wzdgx2vrW/giphy.gif">
+                            </div>
+                        </div>
+                        <div>
+                            <h2 id="encoded-word"></h2>
+                            <h2 id="dash-holder"></h2>
+                            <h2 id="user-guesses"></h2>
+                        </div>
+                        <div class="character_pane">
+                            <form id="form4">
+                                <img class="character" src="https://www.stickpng.com/assets/images/5b45cb3dc051e602a568cd0f.png" alt="Dipper Start">
+                                <p></p>
+                                <p>CHOOSE A LETTER: </p><input type="text" id="user-input" autofocus>
+                                <button id="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+    </body>
+</html>
