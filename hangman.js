@@ -39,6 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("page5").style.display = "flex"
     })
 
+    // let resetButton = document.querySelector("")
+
 
     let arr = ["daddy", "bubble", "button"]
 
@@ -72,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("encoded-word").innerHTML = caesarHolder
 
-    document.getElementById()
+    document.getElementById("dash-holder").innerHTML = dashHolder.join("")
 
     console.log(dashHolder)
     console.log(caesarHolder)
@@ -81,47 +83,93 @@ document.addEventListener("DOMContentLoaded", () => {
     let wrongAnswers = 0
     let win = false;
 
-    let userInput;
-
-    function getCharacter() {
-    let temp = dashHolder.join('');
-    userInput = readlineSync.question(`Guess character: \n`)
-    for (let i = 0; i < splitRandomWord.length; i++) {
-        if (userInput === splitRandomWord[i]) {
-        dashHolder[i] = `${userInput} `;
+    
+    
+    let form = document.querySelector("#form4")
+    
+    form.addEventListener("submit", (event) => {
+        let temp = dashHolder.join("")
+        let userInput = document.querySelector("#user-input").value
+        if (userInput === "") {
+            event.preventDefault()
+            window.alert("NO TEXT HAS BEEN ENTERED!")
+            // let alert = document.querySelector("#error")
+            // alert.innerText = "No text has been entered!"
+        } else {
+            event.preventDefault()
+            alert.innerText = ""
+            console.log(userInput)
+            for(let i = 0; i < splitRandomWord.length; i++) {
+                if (userInput === splitRandomWord[i]) {
+                    dashHolder[i] = `${userInput}`;
+                    console.log(dashHolder)
+                    document.getElementById("dash-holder").innerHTML = dashHolder.join("")
+                }
+            }
+            if(temp == dashHolder.join("")) {
+                wrongAnswers++
+                console.log(wrongAnswers)
+                console.log(typeof wrongAnswers)
+            }
+            if(wrongAnswers === 1) {
+                document.querySelector("#energy1").style.visibility = "visible"
+                console.log("gotcha")
+            } else if (wrongAnswers === 2) {
+                document.getElementById("energy2").style.visibility = "visible"
+                console.log("gotcha2")
+            } else if (wrongAnswers === 3) {
+                document.getElementById("energy3").style.visibility = "visible"
+            } else if (wrongAnswers === 4) {
+                document.getElementById("energy4").style.visibility = "visible"
+            } else if (wrongAnswers === 5) {
+                document.getElementById("energy5").style.visibility = "visible"
+            } else if (wrongAnswers === 6) {
+                document.getElementById("energy6").style.visibility = "visible"
+            }
         }
-    }
+        document.getElementById("user-input").value = ""
+        // while(!win && wrongAnswers < 6) {
+        // let dashesCounter = 0
+        // for (let i = 0; i < dashHolder.length; i++){
+        //     if (dashHolder[i] === '_ '){
+        //     dashesCounter++
+        //     }
+        // }
+        // if (wrongAnswers === 6) {
+        //     console.log("You lose!")
+        //     document.getElementById("page5").style.display = "none"
+        //     document.getElementById("you-lose").style.display = "flex"
+        // }
+        // if (dashesCounter > 0) {
+        //     win = false
+        // } else {
+        //     win = true;
+        //     console.log("You win!!!")
+        //     document.getElementById("page5").style.display = "none"
+        //     document.getElementById("you-win").style.display = "flex"
+        // }
+        // }
+    })
+    
+    // let userInput;
+    
+    // function getCharacter() {
+    //     let temp = dashHolder.join('');
+    //     // userInput = readlineSync.question(`Guess character: \n`)
+    //     for (let i = 0; i < splitRandomWord.length; i++) {
+    //         if (userInput === splitRandomWord[i]) {
+    //             dashHolder[i] = `${userInput} `;
+    //         }
+    //     }
+        
+    //     console.log(dashHolder.join(""))
+    //     console.log(dashHolder)
+        
+    //     if (temp == dashHolder.join('')) {
+    //         wrongAnswers++
+    //     }
+    // }
+    
 
-    console.log(dashHolder.join(""))
-    console.log(dashHolder)
 
-    if (temp == dashHolder.join('')) {
-        wrongAnswers++
-    }
-    }
-
-    // getCharacter()
-    // getCharacter()
-
-    while (!win && wrongAnswers < 6) {
-    console.log(win)
-    getCharacter()
-    let dashesCounter = 0
-    for (let i = 0; i < dashHolder.length; i++){
-        if (dashHolder[i] === '_ '){
-        dashesCounter++
-        }
-    }
-    if (wrongAnswers === 6) {
-        console.log("You lose!")
-    }
-    if (dashesCounter > 0) {
-        win = false
-    } else {
-        win = true;
-        console.log("You win!!!")
-    }
-    console.log(`THIS ONE`,win)
-    console.log(wrongAnswers)
-    }
 })

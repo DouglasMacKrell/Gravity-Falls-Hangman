@@ -15,18 +15,55 @@ body {
     width: 150px;
 }
 
+.gameplay-text {
+    font-size: 50px;
+    text-align: center;
+}
+
+.bill-collector {
+    display: inline-flex;
+}
+
 .energy {
+    display: flex;
+    justify-content: column;
     width: 50px;
     border-radius: 50%;
-    /* display: inline-block; */
-    /* margin-left: auto;
-    margin-right: auto; */
     padding: 20px;
+}
+
+#energy1 {
+    visibility: hidden;
+}
+
+#energy2 {
+    visibility: hidden;
+}
+
+#energy3 {
+    visibility: hidden;
+}
+
+#energy4 {
+    visibility: hidden;
+}
+
+#energy5 {
+    visibility: hidden;
+}
+
+#energy6 {
+    visibility: hidden;
 }
 
 .dialog {
     text-align: center;
     font-size: 20px;
+}
+
+.finish-text {
+    font-size: 70px;
+    text-align: center;
 }
 
 #submit-box {
@@ -80,6 +117,20 @@ body {
     justify-content: center;
 }
 
+#you-win {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#you-lose {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .bill-greeting {
     text-align: center;
 }
@@ -117,4 +168,10 @@ body {
 
 @-ms-keyframes fadein {
     from { opacity: 0; }
+}
+
+.bill-leave {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 5s, opacity 5s linear;
 }
