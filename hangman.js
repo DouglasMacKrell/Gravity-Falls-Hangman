@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     form.addEventListener("submit", (event) => {
         let temp = dashHolder.join("")
-        let userInput = document.querySelector("#user-input").value
+        let userInput = (document.querySelector("#user-input").value).toLowerCase()
         if (userInput === "") {
             event.preventDefault()
             window.alert("NO TEXT HAS BEEN ENTERED!")

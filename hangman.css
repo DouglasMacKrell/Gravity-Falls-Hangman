@@ -26,8 +26,6 @@ body {
     text-align: center;
 }
 
-.bill-greet {}
-
 .bill-collector {
     display: flex;
     justify-content: center;
@@ -216,9 +214,3 @@ body {
 @-ms-keyframes fadein {
     from { opacity: 0; }
 }
-
-/* .bill-leave {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s 5s, opacity 5s linear;
-} */
