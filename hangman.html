@@ -23,8 +23,8 @@
             </h1>
             <div id="do_you_want_to_play">
                 <form id="yes-no">
-                    <input id="yes" type="button" value="YES"> 
-                    <input id="no" type="button" value="NO">
+                    <button id="yes" type="button" value="YES">YES</button>
+                    <button id="no" type="button" value="NO">NO</button>
                 </form>
             </div>
         </div>
@@ -42,7 +42,7 @@
             <div class="center-text">
                 <p class="dialog bill-talk">BILL: The game is simple. I've encoded a word, and you need to decode it.<br>
                     However, for every wrong guess you make, I get a little more powerful.<br>
-                    Make six wrong guesses, and I'll be poweful enough to enter your dimension and have some REAL fun.<br>
+                    Make <strong>SEVEN</strong> wrong guesses, and I'll be poweful enough to enter your dimension and have some <strong>REAL</strong> fun.<br>
                 </p>
                 <p id="empty-word-display"></p>
             </div>
@@ -135,7 +135,8 @@
                         <div class="game-buttons">
                             <form id="form4">
                                 <p>CHOOSE A LETTER: </p><input type="text" id="user-input" autofocus>
-                                <button id="submit">Submit</button>
+                                <button id="submit">SUBMIT</button>
+                                <p id="player-choice"></p>
                             </form>               
                         </div>
                     </div>

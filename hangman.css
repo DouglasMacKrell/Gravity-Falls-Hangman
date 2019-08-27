@@ -7,6 +7,23 @@ body {
     font-family: "Special Elite";
 }
 
+#user-input {
+    width: 70px;
+    height: 50px;
+    font-family: "Special Elite";
+    font-size: 35px;
+}
+
+button {
+    width: auto;
+    text-align: auto;
+    height: 40px;
+    border-radius: 15%;
+    background-color: gold;
+    font-size: 15px;
+    font-family: "Special Elite";
+}
+
 .header {
     text-align: center;
     grid-row: 1;

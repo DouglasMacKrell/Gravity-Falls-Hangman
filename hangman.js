@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("page5").style.display = "grid"
     })
 
-    let arr = ["stan", "grunkle", "dipper", "mabel", "soos", "mcgucket", "mcskermish", "greasys", "susan", "candy", "greta", "standord", "stanley", "dimensional", "caesar", "cipher", "blendin", "blandin", "journal", "cider", "summerween", "jackalope", "bigfoot", "alien", "gobblewonker", "mystery", "shack", "gravity", "triangle", "pacifica", "waddles"]
+    let arr = ["stan", "grunkle", "dipper", "mabel", "soos", "mcgucket", "mcskermish", "greasys", "susan", "candy", "greta", "standord", "stanley", "dimensional", "caesar", "cipher", "blendin", "blandin", "journal", "cider", "summerween", "jackalope", "bigfoot", "alien", "gobblewonker", "mystery", "shack", "gravity", "triangle", "pacifica", "waddles", "mackerel", "swine", "bottomless"]
 
     let threeLettersBack = "DEFGHIJKLMNOPQRSTUVWXYZABC"
 
@@ -65,9 +65,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("encoded-word").innerHTML = caesarHolder
     document.getElementById("dash-holder").innerHTML = dashHolder.join("");
     document.getElementById("correct-answer").innerHTML = `THE CORRECT ANSWER WAS: ${randomWord.toUpperCase()}`
-
     let wrongAnswers = 0
-    let win = false;
+
+    let letterCatcher = ""
     
     let form = document.querySelector("#form4")
     
@@ -79,7 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
             window.alert("NO TEXT HAS BEEN ENTERED!")
         } else {
             event.preventDefault()
-            alert.innerText = ""
             for(let i = 0; i < splitRandomWord.length; i++) {
                 if (userInput === splitRandomWord[i]) {
                     dashHolder[i] = `${userInput}`;
@@ -103,18 +102,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.getElementById("energy6").style.visibility = "visible"
                 document.getElementById("final-dipper").src = "./Dipper Panicked CROP.png"
             }
-         if (!dashHolder.includes("_ ")){
-            document.getElementById("page5").style.display = "none"
-            document.getElementById("you-win").style.display = "flex"
-         } else if (wrongAnswers === 7) {
-            document.getElementById("page5").style.display = "none"
-            document.getElementById("you-lose").style.display = "flex"
-         }
+            if (!dashHolder.includes("_ ")){
+                document.getElementById("page5").style.display = "none"
+                document.getElementById("you-win").style.display = "flex"
+            } else if (wrongAnswers === 7) {
+                document.getElementById("page5").style.display = "none"
+                document.getElementById("you-lose").style.display = "flex"
+            }
         }
         document.getElementById("user-input").value = ""
 
     })
-    
     
 
 
