@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("clicked p2")
         event.preventDefault()
         document.getElementById("page1").style.display = "none"
-        document.getElementById("page2").style.display = "flex"
+        document.getElementById("page2").style.display = "grid"
     })
 
     let youDoNotWantTo = document.querySelector("#no")
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("clicked p3")
         event.preventDefault()
         document.getElementById("page2").style.display = "none"
-        document.getElementById("page3").style.display = "flex"
+        document.getElementById("page3").style.display = "grid"
     })
 
     let turnToPage4 = document.getElementById("press-to-talk2")
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("clicked p4")
         event.preventDefault()
         document.getElementById("page3").style.display = "none"
-        document.getElementById("page4").style.display = "flex"
+        document.getElementById("page4").style.display = "grid"
     })
 
     let turnToPage5 = document.getElementById("press-to-talk3")
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("clicked p5")
         event.preventDefault()
         document.getElementById("page4").style.display = "none"
-        document.getElementById("page5").style.display = "flex"
+        document.getElementById("page5").style.display = "grid"
     })
 
     // let resetButton = document.querySelector("")
@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("encoded-word").innerHTML = caesarHolder
     document.getElementById("dash-holder").innerHTML = dashHolder.join("");
+    document.getElementById("correct-answer").innerHTML = `THE CORRECT ANSWER WAS: ${randomWord.toUpperCase()}`
 
     console.log(dashHolder)
     console.log(caesarHolder)
@@ -122,6 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.getElementById("energy5").style.visibility = "visible"
             } else if (wrongAnswers === 6) {
                 document.getElementById("energy6").style.visibility = "visible"
+                document.getElementById("final-dipper").src = "./Dipper Panicked CROP.png"
             }
          if (!dashHolder.includes("_ ")){
             console.log("You win!!!")
