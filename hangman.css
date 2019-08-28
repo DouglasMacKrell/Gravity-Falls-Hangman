@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
 
-
 body {
     background: black;
     color: lightgreen;
@@ -28,10 +27,13 @@ button {
     font-size: 15px;
     padding: 15px 25px;
     font-family: "Special Elite";
+    transition: all .5s ease;
 }
 
 button:hover {
     background: yellow;
+    transition: all .5s ease;
+    transform: scale(1.1);
 }
 
 .header {
