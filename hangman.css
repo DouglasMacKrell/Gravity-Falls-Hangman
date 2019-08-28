@@ -7,6 +7,10 @@ body {
     font-family: "Special Elite";
 }
 
+#chiptune {
+    visibility: hidden;
+}
+
 #user-input {
     width: 70px;
     height: 50px;
@@ -20,8 +24,14 @@ button {
     height: 40px;
     border-radius: 15%;
     background-color: gold;
+    background-image: linear-gradient(gold, rgb(193, 143, 19));
     font-size: 15px;
-    /* font-family: "Special Elite"; */
+    padding: 15px 25px;
+    font-family: "Special Elite";
+}
+
+button:hover {
+    background: yellow;
 }
 
 .header {
@@ -39,7 +49,7 @@ button {
 }
 
 .gameplay-text {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -74,7 +84,9 @@ button {
 
 .game-buttons {
     display: flex;
+    text-align: center;
     justify-content: center;
+    align-items: center;
 }
 
 .energy {

@@ -7,7 +7,7 @@
     </head>
     <body>
         <div id="music">
-            <audio controls autoplay="true" loop="true"> 
+            <audio id="chiptune" controls autoplay="true" loop="true"> 
                 <source src="./gf chiptune.mp3">
                 Your browser does not support the audio element.
             </audio>
@@ -40,9 +40,13 @@
                 </div>
             </div>
             <div class="center-text">
-                <p class="dialog bill-talk">BILL: The game is simple. I've encoded a word, and you need to decode it.<br>
-                    However, for every wrong guess you make, I get a little more powerful.<br>
-                    Make <strong>SEVEN</strong> wrong guesses, and I'll be poweful enough to enter your dimension and have some <strong>REAL</strong> fun.<br>
+                <p class="dialog bill-talk">BILL: The game is simple.<br>
+                    I've encoded a word, and you need to decode it.<br>
+                    However, for every wrong guess you make,<br>
+                    I get a little more powerful.<br>
+                    Make SEVEN wrong guesses,<br>
+                    and I'll be poweful enough to enter your dimension<br>
+                    and have some REAL fun.<br>
                 </p>
                 <p id="empty-word-display"></p>
             </div>
@@ -134,7 +138,7 @@
                         </div>
                         <div class="game-buttons">
                             <form id="form4">
-                                <p>CHOOSE A LETTER: </p><input type="text" id="user-input" autofocus>
+                                <p>CHOOSE A LETTER: </p><input type="text" id="user-input" autocomplete="off" autofocus>
                                 <button id="submit">SUBMIT</button>
                                 <p id="player-choice"></p>
                             </form>               

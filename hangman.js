@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault()
     
-
-
+    
     let youDoWantTo = document.querySelector("#yes")
     youDoWantTo.addEventListener("click", () => {
         event.preventDefault()
+        document.getElementById("chiptune").play()        
         document.getElementById("page1").style.display = "none"
         document.getElementById("page2").style.display = "grid"
     })
