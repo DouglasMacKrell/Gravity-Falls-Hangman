@@ -21,7 +21,7 @@ button {
     border-radius: 15%;
     background-color: gold;
     font-size: 15px;
-    font-family: "Special Elite";
+    /* font-family: "Special Elite"; */
 }
 
 .header {

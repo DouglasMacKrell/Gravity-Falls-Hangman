@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault()
+    
+
 
     let youDoWantTo = document.querySelector("#yes")
     youDoWantTo.addEventListener("click", () => {
@@ -34,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("page5").style.display = "grid"
     })
 
-    let arr = ["stan", "grunkle", "dipper", "mabel", "soos", "mcgucket", "mcskermish", "greasys", "susan", "candy", "greta", "standord", "stanley", "dimensional", "caesar", "cipher", "blendin", "blandin", "journal", "cider", "summerween", "jackalope", "bigfoot", "alien", "gobblewonker", "mystery", "shack", "gravity", "triangle", "pacifica", "waddles", "mackerel", "swine", "bottomless"]
+    let arr = ["stan", "grunkle", "dipper", "mabel", "soos", "mcgucket", "mcskermish", "greasys", "susan", "candy", "greta", "stanford", "stanley", "dimensional", "caesar", "cipher", "blendin", "blandin", "journal", "cider", "summerween", "jackalope", "bigfoot", "alien", "gobblewonker", "mystery", "shack", "gravity", "triangle", "pacifica", "waddles", "mackerel", "swine", "bottomless"]
 
     let threeLettersBack = "DEFGHIJKLMNOPQRSTUVWXYZABC"
 
@@ -61,19 +63,24 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     }
+    
+    let letterCatcher = []
+    console.log(letterCatcher)
 
     document.getElementById("encoded-word").innerHTML = caesarHolder
     document.getElementById("dash-holder").innerHTML = dashHolder.join("");
     document.getElementById("correct-answer").innerHTML = `THE CORRECT ANSWER WAS: ${randomWord.toUpperCase()}`
+    
     let wrongAnswers = 0
-
-    let letterCatcher = ""
+    
     
     let form = document.querySelector("#form4")
     
     form.addEventListener("submit", (event) => {
         let temp = dashHolder.join("")
         let userInput = (document.querySelector("#user-input").value).toLowerCase()
+        letterCatcher.push(userInput.toUpperCase())
+        document.getElementById("player-choice").innerHTML = `YOU HAVE ENTERED: ${letterCatcher}, `
         if (userInput === "") {
             event.preventDefault()
             window.alert("NO TEXT HAS BEEN ENTERED!")
@@ -113,6 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("user-input").value = ""
 
     })
+    
     
 
 
