@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-    event.preventDefault()
+    
     
     
     let youDoWantTo = document.querySelector("#yes")
     youDoWantTo.addEventListener("click", () => {
-        event.preventDefault()
+        
         document.getElementById("chiptune").play()        
         document.getElementById("page1").style.display = "none"
         document.getElementById("page2").style.display = "grid"
@@ -17,21 +17,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let turnToPage3 = document.getElementById("press-to-talk1")
     turnToPage3.addEventListener("click", () => {
-        event.preventDefault()
+        
         document.getElementById("page2").style.display = "none"
         document.getElementById("page3").style.display = "grid"
     })
 
     let turnToPage4 = document.getElementById("press-to-talk2")
     turnToPage4.addEventListener("click", () => {
-        event.preventDefault()
+        
         document.getElementById("page3").style.display = "none"
         document.getElementById("page4").style.display = "grid"
     })
 
     let turnToPage5 = document.getElementById("press-to-talk3")
     turnToPage5.addEventListener("click", () => {
-        event.preventDefault()
+        
         document.getElementById("page4").style.display = "none"
         document.getElementById("page5").style.display = "grid"
     })
@@ -77,18 +77,18 @@ document.addEventListener("DOMContentLoaded", () => {
     let form = document.querySelector("#form4")
     
     form.addEventListener("submit", (event) => {
+        event.preventDefault()
         let temp = dashHolder.join("")
         let userInput = (document.querySelector("#user-input").value).toLowerCase()
         if (userInput === "") {
-            event.preventDefault()
             window.alert("NO TEXT HAS BEEN ENTERED!")
         } else if (letterCatcher.includes(userInput.toUpperCase())) {
-            event.preventDefault()
+            
             console.log("gotcha")
             window.alert("THAT'S THE SAME LETTER!")
             document.getElementById("user-input").value = ""
         } else {
-            event.preventDefault()
+            
             for(let i = 0; i < splitRandomWord.length; i++) {
                 if (userInput === splitRandomWord[i]) {
                     dashHolder[i] = `${userInput}`;
