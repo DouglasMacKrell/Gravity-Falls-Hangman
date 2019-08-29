@@ -79,11 +79,14 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", (event) => {
         let temp = dashHolder.join("")
         let userInput = (document.querySelector("#user-input").value).toLowerCase()
-        letterCatcher.push(userInput.toUpperCase())
-        document.getElementById("player-choice").innerHTML = `YOU HAVE ENTERED: ${letterCatcher}, `
         if (userInput === "") {
             event.preventDefault()
             window.alert("NO TEXT HAS BEEN ENTERED!")
+        } else if (letterCatcher.includes(userInput.toUpperCase())) {
+            event.preventDefault()
+            console.log("gotcha")
+            window.alert("THAT'S THE SAME LETTER!")
+            document.getElementById("user-input").value = ""
         } else {
             event.preventDefault()
             for(let i = 0; i < splitRandomWord.length; i++) {
@@ -95,6 +98,8 @@ document.addEventListener("DOMContentLoaded", () => {
             if(temp == dashHolder.join("")) {
                 wrongAnswers++
             }
+            letterCatcher.push(userInput.toUpperCase())
+            document.getElementById("player-choice").innerHTML = `YOU HAVE ENTERED: ${letterCatcher}, `
             if(wrongAnswers === 1) {
                 document.querySelector("#energy1").style.visibility = "visible"
             } else if (wrongAnswers === 2) {
