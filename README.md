@@ -1,17 +1,9 @@
-# Hangman: The Web App
+# Bill Cipher's Kdqjpdq! 
+## Gravity Falls Hangman
 
-## Instructions for weekly assignment submission
+Live @ [douglasmackrell.github.io/Gravity-Falls-Hangman](https://douglasmackrell.github.io/Gravity-Falls-Hangman/)
 
-1. Fork the assignment repo
-1. Clone your Fork to your machine
-1. Complete the weekly assignment
-1. Push your changes to your Fork
-1. Submit a Pull Request back to the assignment repo
-1. Paste a link to of your Fork on Canvas and submit
-
-For this assignment, you will build hangman.  This time, you'll build it as a web app!
-
-![sampleGif](https://github.com/joinpursuit/Pursuit-Core-Web-Hangman-Weekly-Assignment/blob/master/HangmanWebApp.gif)
+![Gravity Falls Hangman](https://douglasmackrell.github.io/Gravity-Falls-Hangman/GF-Hangman.gif)
 
 ## MVP
 
