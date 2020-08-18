@@ -3,7 +3,7 @@
 
 Live @ [douglasmackrell.github.io/Gravity-Falls-Hangman](https://douglasmackrell.github.io/Gravity-Falls-Hangman/)
 
-![Gravity Falls Hangman](https://douglasmackrell.github.io/Gravity-Falls-Hangman/GF-Hangman.gif)
+![Gravity Falls Hangman](./GF-Hangman.gif)
 
 ## MVP
 
