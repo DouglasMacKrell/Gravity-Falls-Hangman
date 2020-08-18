@@ -6,7 +6,6 @@
 
 [![Gravity Falls Hangman](./GF-Hangman.gif)](https://douglasmackrell.github.io/Gravity-Falls-Hangman/)
 
-
 ### Created by [Douglas MacKrell](https://douglasmackrell.com)
 
 [![Douglas MacKrell](https://www.douglasmackrell.com/Doug-Portfolio-Social.png)](https://dougmackrell.com)
@@ -23,9 +22,9 @@
 
 ## VIDEO
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=9q5eMg6uLR0" target="_blank"><img src="http://img.youtube.com/vi/9q5eMg6uLR0/0.jpg" 
-alt="Responsive Navigation Bar With Slide Drawer - Personal Portfolio Website" width="240" height="180" border="10" /></a>  
-* [Responsive Navigation Bar With Slide Drawer - Personal Portfolio Website](https://youtu.be/9q5eMg6uLR0)
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=aMwQ52vcu1U" target="_blank"><img src="http://img.youtube.com/vi/aMwQ52vcu1U/0.jpg" 
+alt="Bill Cipher's Kdqjpdq! (A Gravity Falls Hangman Game)" width="240" height="180" border="10" /></a>  
+* [Bill Cipher's Kdqjpdq! (A Gravity Falls Hangman Game)](https://youtu.be/aMwQ52vcu1U)
 
 ## FEATURES
 
